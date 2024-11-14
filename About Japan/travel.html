@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    .header {
+  background-image: url('https://th.bing.com/th/id/OIP.b_1_AveQRq0tNshqrZFvwwHaEK?rs=1&pid=ImgDetMain'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+  color: white; /* Text color on top of the image */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Optional: Adds shadow to text */
+}
+
+main {
+  padding: 20px;
+}
+   
+.row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-basis: calc(33.33% - 20px); /* Adjust width of columns */
+  margin: 10px;
+  padding: 20px;
+  background-color: #f0f0f0; /* Background color of columns */
+  text-align: center;
+}
+
+.column img {
+  width: 100%; /* Make sure images fill their container */
+  max-width: 100%;
+  height: auto;
+}
+
+.column h2 {
+  margin-top: 10px;
+  font-size: 3em;
+}
+
+.column p {
+  font-size: 1.5em;
+  line-height: 1.5;
+}  
+
+.question-container {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .arrow {
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+        .answer {
+            display: none;
+            margin-left: 20px;
+        }
+        .question-container.open .arrow {
+            transform: rotate(90deg);
+        }
+        .question-container.open .answer {
+            display: block;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container1 {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 90%;
+        }
+        .question-container {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .arrow {
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+        .answer {
+            display: none;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .question-container.open .arrow {
+            transform: rotate(90deg);
+        }
+        .question-container.open + .answer {
+            display: block;
+        }
+        .h1{
+          text-align: center;
+        }
+        h1.centered {
+    font-family: Arial, sans-serif; /* Example font */
+    font-size: 3em; /* Example font size */
+    color: #7a3838; /* Example text color */
+    text-align: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient background */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.spacer{
+  height: 10vh;
+}
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>TRAVEL</h1>
+  </header> 
+  <div class="row">
+    <a href="tokyo.html" class="column">
+    <div class="column">
+      <img src="https://rare-gallery.com/uploads/posts/4548612-tokyo-tower-tokyo-japan-city.jpg" alt="Image 1">
+      <h2>Tokyo</h2>
+      <p>Best for contemporary culture.</p>
+    </div>
+  </a>
+  <a href="kyoto.html" class="column">
+    <div class="column">
+      <img src="https://img.washingtonpost.com/rf/image_1484w/2010-2019/WashingtonPost/2017/08/17/Travel/Images/japan0820.JPG?uuid=X8PjOIKMEeeeeiD6jXoNtg" alt="Image 2">
+      <h2>Kyoto</h2>
+      <p>Best for traditional experience.</p>
+    </div>
+  </a>
+    <a href="naoshima.html" class="column">
+    <div class="column">
+      <img src="https://www.neverendingvoyage.com/wp-content/uploads/2019/11/naoshima-island-5.jpg" alt="Image 3">
+      <h2>Naoshima</h2>
+      <p>Best for architecture.</p>
+    </div>
+  </a>
+  </div>
+
+  <div class="row">
+    <a href="mtfuji.html" class="column">
+      <img src="https://th.bing.com/th/id/OIP.wIFembgBTONDbH5VBphtbwAAAA?rs=1&pid=ImgDetMain" alt="Image 1">
+      <h2>Mt.Fuji</h2>
+      <p>A breadthtaking marvel.</p>
+    </a>
+    <a href="hiroshima.html" class="column">
+      <img src="https://cdn.audleytravel.com/-/-/79/1314584-atomic-bomb-dome-hiroshima.jpg" alt="Image 2">
+      <h2>Hiroshima</h2>
+      <p>Known for the Peace Memorial Park.</p>
+    </a>
+    <a href="yakushima.html" class="column">
+      <img src="https://www.kanpai-japan.com/sites/default/files/uploads/2018/08/yakushima-7.jpg" alt="Image 3">
+      <h2>Yakushima</h2>
+      <p>Closer to nature.</p>
+    </a>
+  </div>
+  <div class="row">
+    <a href="nara.html" class="column">
+      <img src="https://a.cdn-hotels.com/gdcs/production143/d831/274f55e2-aba8-4c9a-8ce0-ade79730cca8.jpg" alt="Image 1">
+      <h2>Nara</h2>
+      <p>City of culture and ancient history.</p>
+    </a>
+    <a href="osaka.html" class="column">
+      <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15d287477658.83209940.jpeg" alt="Image 2">
+      <h2>Osaka Castle</h2>
+      <p>Historic site in Osaka.</p>
+    </a>
+    <a href="ishigaki.html" class="column">
+      <img src="https://th.bing.com/th/id/OIP.D9tGpQVh9NK6dX1vieHrnAHaE8?rs=1&pid=ImgDetMain" alt="Image 3">
+      <h2>Ishigaki</h2>
+      <p>Exotic destination.</p>
+    </a>
+  </div>
+  <div class="spacer"></div>
+  <h1 class="centered">QUESTION & ANSWER</h1>
+  <div class="container">
+    <div class="container1">
+  <div class="question-container" onclick="toggleAnswer(this)">
+    <div class="arrow">➔</div>
+    <div class="question">How many days should I spend in Japan?</div>
+</div>
+<div class="answer">
+  Spending one week in Japan — 3 days in Tokyo, 3 in Kyoto, and 1 in Osaka — is common for first-time visitors who want to cover the highlights.
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="container1">
+<div class="question-container" onclick="toggleAnswer(this)">
+  <div class="arrow">➔</div>
+  <div class="question">How much is a trip to Japan for 2 weeks?</div>
+</div>
+<div class="answer">
+  On average, a foreign tourist spends about 15,000 yen a day, so a 2-week trip should cost about 210,000 yen.
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="container1">
+<div class="question-container" onclick="toggleAnswer(this)">
+  <div class="arrow">➔</div>
+  <div class="question">When should I visit Japan?</div>
+</div>
+<div class="answer">
+  In general, the best times to visit Japan are late spring and late autumn, when the scenery is gorgeous and the weather is mild and dry.
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="container1">
+<div class="question-container" onclick="toggleAnswer(this)">
+  <div class="arrow">➔</div>
+  <div class="question">Which airport in Japan is the cheapest to fly to?</div>
+</div>
+<div class="answer">
+  Haneda Airport in Tokyo operates several international flights to and from North America, Europe, and others, and the average cost of a return flight is just around 1,000 US dollars.
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="container1">
+<div class="question-container" onclick="toggleAnswer(this)">
+  <div class="arrow">➔</div>
+  <div class="question">What is the capital of Japan?</div>
+</div>
+<div class="answer">
+  The capital of Japan is Tokyo.
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="container1">
+<div class="question-container" onclick="toggleAnswer(this)">
+  <div class="arrow">➔</div>
+  <div class="question">Is Japan expensive to visit?</div>
+</div>
+<div class="answer">
+  The average budget of a foreign tourist in Japan is 15,000 yen a day, but it can be lowered or increased, depending on your budget and travel style.
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="container1">
+<div class="question-container" onclick="toggleAnswer(this)">
+  <div class="arrow">➔</div>
+  <div class="question">How many days in Kyoto is enough?</div>
+</div>
+<div class="answer">
+  Allocating at least 3 full days in Kyoto should give you enough time to see the city’s top tourist sites and attractions.
+</div>
+</div>
+</div>
+
+<div class="container">
+  <div class="container1">
+<div class="question-container" onclick="toggleAnswer(this)">
+  <div class="arrow">➔</div>
+  <div class="question">Is food expensive in Japan?</div>
+</div>
+<div class="answer">
+  Eating a full meal at Japanese restaurants can cost between 500 yen and 3,000 yen. At convenience stores, sandwiches, coffee, pastries, and others average around 300 yen to 500 yen.
+</div>
+</div>
+</div>
+
+<script>
+  function toggleAnswer(element) {
+            element.classList.toggle('open');
+        }
+</script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HIROSHIMA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+       body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: url('https://www.universalaviation.aero/wp-content/uploads/2022/09/Hiroshima-Ground-Handling.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  color: white; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+main {
+  padding: 20px;
+}
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.column {
+  flex-basis: 50%; 
+  padding: 20px; 
+  background-color: white; 
+  overflow: hidden; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.column img {
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.column h2 {
+  font-size: 3em; 
+  margin-bottom: 10px; 
+}
+
+.column p {
+  font-size: 1em; 
+  line-height: 1.5; 
+}
+.spacer{
+    height: 10vh;
+}
+.centered-topic {
+  background-color: grey; 
+  padding: 20px 40px; 
+  border-radius: 8px; 
+  text-align: center;
+}
+
+.centered-topic h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.column1 {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.column1 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.column1 h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.description {
+  display: none; /* Initially hide descriptions */
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+  </style>
+  <body>
+    <header class="header">
+        <h1>HIROSHIMA</h1>
+      </header>
+      <div class="spacer"></div>
+      <div class="container">
+        <div class="column">
+            <h2>About</h2>
+            <p> Hiroshima, a city in western Japan, is globally recognized for its profound historical significance and remarkable transformation. On August 6, 1945, Hiroshima became the first city in history to suffer an atomic bombing, leading to immense devastation and loss of life. Today, Hiroshima stands as a symbol of peace and resilience, having rebuilt itself from the ashes into a vibrant, thriving city. The Hiroshima Peace Memorial Park, located at the epicenter of the blast, is dedicated to the memory of the victims and the promotion of global peace. It includes poignant sites such as the Atomic Bomb Dome, a UNESCO World Heritage Site, and the Hiroshima Peace Memorial Museum, which educates visitors about the horrors of nuclear warfare and the importance of peace.</p>
+          </div> 
+        <div class="column">
+            <img src="https://th.bing.com/th/id/OIP.P9p_8wPVLt3NL-L1Xx8QYAHaE8?rs=1&pid=ImgDetMain" alt="Image">
+          </div>
+        
+        
+      </div>
+      <div class="centered-topic">
+        <h1>HIGHLIGHTS</h1>
+      </div>
+
+      <div class="container1">
+        <!-- Row 1 -->
+        
+          <div class="column1" onclick="toggleDescription('desc1')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-hiroshima-peace-memorial-park-3.jpg" alt="Image 1">
+            <h2>Hiroshima Peace Memorial Park</h2>
+            <p id="desc1" class="description">Created to symbolize the need for everlasting peace, Hiroshima Peace Memorial Park (Hiroshima Heiwa Kinen Kōen) commemorates the many victims of the world's first nuclear attack in August 1945. Located at the epicenter of the blast in what was once a bustling part of the city, the park includes a variety of important monuments, memorials, and museums relating to the events of that fateful day and its aftermath, and attracts more than a million visitors each year.
+
+                In addition to the grounds and gardens, with their colorful cherry blossoms, highlights include the Peace Memorial Museum, the Memorial Cenotaph, and the Flame of Peace, as well as perhaps the site's best-known landmark, the Atom Bomb Dome. </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc2')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-hiroshima-itsukushima.jpg" alt="Image 2">
+            <h2>The Island Shrine of Itsukushima
+            </h2>
+            <p id="desc2" class="description">Miyajima, aka "Shrine Island," is one of Japan's most important (and most visited) coastal sites. Covering some 30 square kilometers of Hiroshima Bay, the island is famous for the spectacular Itsukushima shrine, dedicated to the Princesses Ichikishimahime, Tagorihime and Tagitsu-hime, daughters of the Shinto wind god Susanoo.
+
+                First mentioned in 811 CE, the shrine's buildings rise out of the waters of a small bay supported on piles and, at high tide, appear to float on water, presenting a picturesque and colorful spectacle with their red timber framing and white walls (the buildings are linked by covered gangways). It's a particularly attractive sight at nighttime.
+            </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc3')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-hiroshima-peace-memorial-museum.jpg" alt="Image 3">
+            <h2>Hiroshima Peace Memorial Museum
+            </h2>
+            <p id="desc3" class="description">A must-see when visiting Hiroshima Peace Memorial Park is the Peace Memorial Museum with its many chilling displays focusing on the atomic bombing of the city, as well as numerous exhibits dealing with the issue of world peace. Comprised of two rather starkly designed modern buildings, the museum contains numerous graphic exhibits conveying the terrible reality of the atomic bombing and takes about two hours to see in its entirety.
+
+                The east building tells of Hiroshima before and after the bombing, while the west building concentrates on the events of that fateful August day. One of the most popular of Hiroshima's tourist attractions, the Peace Memorial Museum draws more than a million visits a year from those wishing to learn about the city's destruction, the causes of the war, and its results.</p>
+          </div>
+        </div>
+      
+        <div class="container1">
+        
+          <div class="column1" onclick="toggleDescription('desc4')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-hiroshima-castle.jpg" alt="Image 4">
+            <h2>Hiroshima Castle
+            </h2>
+            <p id="desc4" class="description">Also known as the "Castle of Carp," Hiroshima Castle (Rijō) was built in 1593 as the residence of local nobleman Fukushima Masanori before passing into the possession of famous samurai Asano Nagaakira in 1619.
+
+                The castle's lovely five-story main tower, fully reconstructed in 1958, contains an informative museum dealing with both the history of the city as well as the castle itself. From here, you'll also enjoy fine views over Hiroshima, the harbor, and the island of Miyakojima on the top floor.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc5')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-hiroshima-shukkei-en-garden.jpg" alt="Image 5">
+            <h2>Shukkei-en Garden</h2>
+            <p id="desc5" class="description">Located on the banks of the Ōta River sits the beautiful Shukkei-en Garden. This oasis of peace and tranquility was splendidly laid out by Asano Nagaakira of Kyoto in 1620 in imitation of the famous landscaped garden on the Western Lake of the old South Chinese Sung Dynasty capital of Hangzhou.
+
+                Once the home of Emperor Meiji, the gardens opened to the public after being donated to the city in 1940. Despite heavy damage from the nuclear attack of 1945, the gardens reopened in all their former glory in 1951.
+                
+                A highlight of a visit is simply walking its many garden trails and traversing its bridges while enjoying the abundance of pools and streams, which draw their water from the Ōta.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc6')">
+            <img src="https://www.planetware.com/wpimages/2020/09/japan-hiroshima-top-attractions-memorial-cathedral-world-peace.jpg" alt="Image 6">
+            <h2>Memorial Cathedral of World Peace
+            </h2>
+            <p id="desc6" class="description">One of the largest Roman Catholic churches in Asia, the huge grey Memorial Cathedral of World Peace was built in 1954 on the initiative of a German Jesuit priest named Hugo Lassalle, who had experienced the explosion of the atomic bomb firsthand.
+
+                Officially designated as the Assumption of Mary Cathedral, it was designed by leading Japanese architect Murano Togo. The building was largely paid for by contributions made by numerous countries and stands as a testament to the ability of nations to work together when necessary.
+                
+                A highlight of a visit includes seeing the cathedral's four bells in the 46-meter-high tower, presented by the German town of Bochum. </p>
+          </div>
+        </div>
+      
+       <div class="container1">
+    
+          <div class="column1" onclick="toggleDescription('desc7')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-hiroshima-mitaki-dera-fudoin-temples.jpg" alt="Image 7">
+            <h2>Mitaki-dera Temple</h2>
+            <p id="desc7" class="description">Of Hiroshima's many fine historic temples, one of the most attractive is Mitaki-dera. Originally built in 809 CE and reconstructed after the war, the site is as famous for its splendid temple as it is for its beautiful grounds. Come autumn, the trees here burst into an array of vibrant reds and golds as the maples change color.
+
+                Also known as the "Three Falls Temple" for its location at the foot of Mount Mitaki, the temple is notable for its red-lacquered pagoda, Tahoto, and nearby waterfalls.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc8')">
+            <img src="https://www.planetware.com/wpimages/2020/09/japan-hiroshima-top-attractions-fudoin-temple.jpg" alt="Image 8">
+            <h2>Fudoin Temple 
+            </h2>
+            <p id="desc8" class="description">The city's Fudoin Temple is also worth visiting. This popular attraction is a fine example of the architecture of the Muromachi period between the 14th and 16th centuries. Although only four kilometers from the epicenter of the atom bomb blast, the main building survived intact, apart from some damage to its roof.
+
+                Highlights of a visit include seeing the temple's Main Hall, which is famous for its elegantly carved statue, and is now designated as a national treasure. There are also numerous important statues sprinkled among the temple's other buildings, as well as a bell tower dating from the 15th century.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc9')">
+            <img src="https://www.planetware.com/wpimages/2023/05/japan-hiroshima-top-attractions-hiroshima-museum-art-other-galleries-statue.jpg" alt="Image 9">
+            <h2> Hiroshima Museum of Art and Other Galleries
+            </h2>
+            <p id="desc9" class="description">Consisting of eight galleries, the Hiroshima Museum of Art (Hiroshima Bijutsukan) is just one of a number of world-class art galleries worth visiting.
+
+                Highlights include a collection of paintings by European Masters such as Monet, Renoir, Degas, Maillol, and Picasso, representing key movements such as Romanticism and Impressionism. There are also numerous works by leading Japanese artists such as Ryohei Koiso and Yuzo Saeki.
+                
+                Be sure to also visit the Hiroshima Prefectural Art Museum (Hiroshima Kenritsu Bijutsukan). Opened in 1968, it focuses on the work of local artists, including collections of art related to the atomic bombing, as well as a children's gallery.</p>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        function toggleDescription(id) {
+    var desc = document.getElementById(id);
+    if (desc.style.display === 'none') {
+      desc.style.display = 'block';
+    } else {
+      desc.style.display = 'none';
+    }
+  }
+    </script>
+  </body>
+</html>

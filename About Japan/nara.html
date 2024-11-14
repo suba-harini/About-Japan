@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NARA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+       body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: url('https://wowtravel.me/wp-content/uploads/2019/12/Nara-Japan-at-Koriyama-Castle-in-the-spring-season-shutterstock_247902220.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  color: white; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+main {
+  padding: 20px;
+}
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.column {
+  flex-basis: 50%; 
+  padding: 20px; 
+  background-color: white; 
+  overflow: hidden; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.column img {
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.column h2 {
+  font-size: 3em; 
+  margin-bottom: 10px; 
+}
+
+.column p {
+  font-size: 1em; 
+  line-height: 1.5; 
+}
+.spacer{
+    height: 10vh;
+}
+.centered-topic {
+  background-color: grey; 
+  padding: 20px 40px; 
+  border-radius: 8px; 
+  text-align: center;
+}
+
+.centered-topic h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.column1 {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.column1 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.column1 h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.description {
+  display: none; /* Initially hide descriptions */
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+  </style>
+  <body>
+    
+<header class="header text-center my-4">
+    <h1>NARA</h1>
+  </header>
+  
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About</h2>
+        <p>Nara, located in Japan's Kansai region, is a city renowned for its rich cultural heritage and historical significance. Once the capital of Japan during the Nara period (710-794 AD), it is home to some of the country's oldest and most revered temples, shrines, and ancient landmarks. The city's most famous site is Todai-ji, a colossal temple housing the Great Buddha, one of the largest bronze statues in the world. Nara Park, where deer roam freely, adds to the city's charm, symbolizing its harmonious blend of nature and tradition. Nara's historical treasures and serene atmosphere make it a captivating destination for visitors interested in Japan's deep-rooted history and culture.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="https://i.pinimg.com/originals/24/f6/45/24f6457a3bd8374e27d5c628ad97454a.jpg" class="img-fluid" alt="Nara Image">
+      </div>
+    </div>
+  </div>
+  
+  <div class="text-center my-4">
+    <h1>HIGHLIGHTS</h1>
+  </div>
+  
+  <div class="container1">
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc1')">
+        <img src="https://www.planetware.com/photos-large/JPN/japan-nara-todai-ji-temple.jpg" class="img-fluid" alt="Nara Park and Tōdai-ji Temple">
+        <h2>Nara Park and Tōdai-ji Temple</h2>
+        <p id="desc1" class="description">Located in the heart of the city, Nara Park (Nara Kōen) is home to history, culture, and nature. Highlights include watching the park's roe deer wander the woods and lawns while visiting its many historical buildings, including the magnificent Kofuku-ji Temple adjacent to the large Sarusawa Pond, as well as the Uneme Shrine. The largest such park in Japan (and one of the oldest, having been established in the 1300s), Nara Park is home to the eighth-century-AD Todai-ji (Great East Temple), the most famous of the Seven Great Temples of Nara. Todai-ji Temple's best-known attraction is the huge bronze statue of the Great Buddha (Daibutsu), cast in Nara in 749 CE. Another must-see is its Great South Gate (Nandaimon). This two-story structure is borne on 18 columns and features two Nio statues standing eight meters tall and guarding the temple entrance.</p>
+      </div>
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc2')">
+        <img src="https://www.planetware.com/photos-large/JPN/japan-nara-neiraku-art-museum-isuien-garden.jpg" class="img-fluid" alt="Isuien Garden">
+        <h2>Isuien Garden</h2>
+        <p id="desc2" class="description">The Isuien Garden, home to the small yet interesting Neiraku Art Museum, opened in 1969 and is landscaped in the famous Japanese Shakkei style — literally translated as the "borrowed landscape" — in which the surroundings of the garden are incorporated in the total effect. Together with the museum, it makes for a fabulous outing, especially if you visit the two teahouses in the nearer part of the garden: the Seishuan and the Sanshutei, or the thatched Hyoshintei, the latter famous for its excellent green tea. Be sure to also visit the Teishuken waiting room. The older rear part of the garden, laid out in 1899, has the South Gate of the Todaiji and Mount Wakakusa as its backdrop. On its island in the little lake is a stone from the foundations of the Buddha Hall, while the stepping-stones are old millstones used in the manufacture of fabric dyes.</p>
+      </div>
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc3')">
+        <img src="https://www.planetware.com/photos-large/JPN/japan-nara-kofuku-ji-temple.jpg" class="img-fluid" alt="Kofuku-ji Temple">
+        <h2>Kofuku-ji Temple</h2>
+        <p id="desc3" class="description">Another of the Seven Great Temples of Nara that is also located in Nara Park, the Kofuku-ji Temple complex consisted of 175 buildings in its heyday. The complex was founded in 669 CE, and the surviving buildings include an octagonal hall known as the Nan-endo. Built in 813 CE, it's home to a statue of Fukukenjaku-Kannon carved in 1188, along with very fine statues of the four celestial guardians and the six patriarchs of the Hosso sect. In front of the hall is a ninth-century bronze lantern with an inscription attributed to Kobo-daishi, as well as a three-story pagoda. Another building of note is the Northern Hall (Hoku-endo), also octagonal and built for Empress Gensho in 721 CE and famous for its 13th-century wooden statue of Miroku-bosatsu.</p>
+      </div>
+    </div>
+  </div>
+    <!-- Row 2 -->
+     <div class="container1">
+    <div class="row">
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc4')">
+        <img src="https://www.planetware.com/wpimages/2020/09/japan-nara-top-attractions-toshodai-ji-temple.jpg" class="img-fluid" alt="Image 4">
+        <h2>Tōshōdai-ji Temple</h2>
+        <p id="desc4" class="description">Founded in 759 CE, Tōshōdai-ji was constructed as the principal temple of the 30 temples of the Ritsu sect. While only two of the original buildings have survived — the Main Hall and Lecture Hall — the site has retained much of its original layout and is a delight to explore.
+
+            The Main Hall, also known as the "Classic Golden Hall" (Kondo), is the largest and finest example of Tempyo architecture to have survived in Japan. It is famous for its vast pillared gallery and large seated statue of Rushana-butsu and its magnificent halo, decorated with 864 small Buddhas.
+            
+            The Lecture Hall (Kodo) is also worth exploring and contains many fine sculptures, including a number carved from a single piece of cypress wood.</p>
+      </div>
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc5')">
+        <img src="https://www.planetware.com/wpimages/2020/09/japan-nara-top-attractions-yakushi-ji-temple.jpg" class="img-fluid" alt="Image 5">
+        <h2>Yakushi-ji Temple</h2>
+        <p id="desc5" class="description">The principal temple of the Hosso sect, Yakushi-ji was originally constructed in the seventh century and still contains statues from that period. Begun in 680 CE during the reign of Emperor Temmu, only the East Pagoda survives, with the remaining structures seen here today dating from the 12th and 13th centuries.
+
+            Highlights include the Main Hall (Kondo) containing the famous Akushi Trinity, a nearly three-meter-tall figure with both Chinese and Indian influences flanked by noblemen and dating from 697 CE.
+            
+            The original three-story East Pagoda, standing 38 meters high and topped by a unique metal pinnacle, is the only surviving example of Buddhist architecture of the seventh century.</p>
+      </div>
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc6')">
+        <img src="https://www.planetware.com/photos-large/JPN/japan-nara-kasuga-taisha-shrine.jpg" class="img-fluid" alt="Image 6">
+        <h2>Kasuga Grand Shrine</h2>
+        <p id="desc6" class="description">The Kasuga Grand Shrine (Kasuga-taisha) was founded by Fujiwara Nagate during the eighth century. This must-visit attraction consists of four separate buildings dedicated to the divinities Takemikazuchi and Futsunushi, along with the ancestral gods of the Fujiwara family, Amenokoyane and his consort Hime-okami.
+
+            The buildings of this UNESCO World Heritage Site are characteristic examples of the Kasuga-zukuri style, differing from early timber buildings in their brightly painted red beams, the white facing of the walls, and the curving roofline.
+            
+            Another distinguishing feature are the many hundreds of bronze and stone lanterns dotting the property. A great time to visit the temple is February or August, when these lanterns are lit during special Lantern Festivals.</p>
+      </div>
+    </div>
+</div>
+  
+    <!-- Row 3 -->
+     <div class="container1">
+    <div class="row">
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc7')">
+        <img src="https://www.planetware.com/photos-large/JPN/japan-nara-national-museum.jpg" class="img-fluid" alt="Image 7">
+        <h2>Nara National Museum
+        </h2>
+        <p id="desc7" class="description">Built in 1895, the Nara National Museum (Nara Kokuritsu Hakubutsukan) is the city's most important museum and houses numerous major works of art, particularly of the Nara period of the eighth century.
+
+            In addition to periodic temporary displays of exhibits selected from the museum's large reserves, its permanent collection includes a number of galleries dedicated to archaeological finds, as well as fine displays of sculpture, paintings, and calligraphy.
+            
+            Of particular interest for those who have visited the city's many fine temples are its collections of important religious items, including numerous Buddhist statues and paintings. English-language guided tours are available.</p>
+      </div>
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc8')">
+        <img src="https://www.planetware.com/wpimages/2020/09/japan-nara-top-attractions-horyu-ji-temple.jpg" class="img-fluid" alt="Image 8">
+        <h2>Hōryū-ji Temple</h2>
+        <p id="desc8" class="description">The oldest completely preserved temple complex in Japan, Hōryū-ji — which literally translates as 'Temple of the Flourishing Dharma" — is a magnificent example of the architecture of the Asuka period from 552 to 645 CE. It, in fact, contains many masterly works of art covering the whole range of Japanese history.
+
+            Built in 607 CE as one of the Seven Great Temples of Nara, Hōryū-ji became the great center of Buddhism in Japan, from which the new faith was carried across the country (in those days, the road from the Imperial Court to the coast passed the temple site). The principal temple of the Shotoku sect, the site comprises 45 buildings, 17 of which are classified as Major National Treasures.
+            
+            Divided into two parts — the To-in or Higashi-no-in (the eastern part) with 14 buildings, and the Sai-in or Nishi-no-in (the western part) with 31 buildings — it can take the best part of a day to explore.</p>
+      </div>
+      <div class="col-md-4 mb-4" onclick="toggleDescription('desc9')">
+        <img src="https://www.planetware.com/photos-large/JPN/japan-nara-shin-yakushi-ji-temple.jpg" class="img-fluid" alt="Image 9">
+        <h2>Shin-Yakushi-ji Temple</h2>
+        <p id="desc9" class="description">Founded by Empress Komyo in 747 CE to secure the help of the gods in curing an eye complaint from which her husband Shomu suffered, the Shin-Yakushiji Temple is a classic example of the Late Nara style. Taking its name from the Healing Buddha (Yakushi) to whom it's dedicated, this important religious site contains a large statue of Yakushi-nyorai carved from a single piece of wood.
+
+            There's also an interesting and important statue of the Eleven-Headed Kannon surrounded by 12 pottery figures of guardian divinities (Juni-shinsho), all masterpieces of Late Nara sculpture. Also of note is the Main Hall (Hondo), the only part of the original temple to have survived from the Nara period.</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function toggleDescription(id) {
+      var desc = document.getElementById(id);
+      if (desc.style.display === 'none') {
+        desc.style.display = 'block';
+      } else {
+        desc.style.display = 'none';
+      }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

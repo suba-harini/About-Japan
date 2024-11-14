@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tokyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: url('https://wallpaperaccess.com/full/45377.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  color: white; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+main {
+  padding: 20px;
+}
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.column {
+  flex-basis: 50%; 
+  padding: 20px; 
+  background-color: white; 
+  overflow: hidden; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.column img {
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.column h2 {
+  font-size: 3em; 
+  margin-bottom: 10px; 
+}
+
+.column p {
+  font-size: 1em; 
+  line-height: 1.5; 
+}
+.spacer{
+    height: 10vh;
+}
+.centered-topic {
+  background-color: grey; 
+  padding: 20px 40px; 
+  border-radius: 8px; 
+  text-align: center;
+}
+
+.centered-topic h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.column1 {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.column1 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.column1 h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.description {
+  display: none; /* Initially hide descriptions */
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+  </style>
+  <body>
+    <header class="header">
+        <h1>TOKYO</h1>
+      </header>
+<div class="spacer"></div>
+      <div class="container">
+        <div class="column">
+          <h2>About</h2>
+          <p>Tokyo, the capital city of Japan, is a bustling metropolis that seamlessly blends traditional culture with cutting-edge modernity. As one of the world's most populous urban areas, Tokyo is renowned for its towering skyscrapers, vibrant neighborhoods, and efficient public transportation system. The city's skyline is dominated by iconic structures such as the Tokyo Tower and the Tokyo Skytree, offering breathtaking views of the sprawling urban landscape. Amidst the modernity, historic sites like the Meiji Shrine, Senso-ji Temple, and the Imperial Palace grounds provide serene escapes and a glimpse into Japan's rich history. Tokyo is also a global hub for cuisine, boasting an unparalleled array of dining options ranging from Michelin-starred restaurants to bustling street food markets. </p>
+        </div>
+        <div class="column">
+          <img src="https://wallpaperaccess.com/full/53729.jpg" alt="Image">
+        </div>
+      </div>
+
+      <div class="centered-topic">
+        <h1>HIGHLIGHTS</h1>
+      </div>
+      <div class="container1">
+        <div class="column1" onclick="toggleDescription('desc1')">
+          <img src="https://www.planetware.com/wpimages/2020/09/japan-tokyo-top-attractions-meji-shrine.jpg" alt="Image 1">
+          <h2>Enjoy Nature and Art at the Meiji Shrine
+        </h2>
+          <p id="desc1" class="description">Dedicated to Emperor Meiji and his wife, Empress Shōken, the construction of the splendid Meiji Shrine (Meiji Jingū) began in 1915 and was completed in 1926. Although the original structure was destroyed during WWII, it was rebuilt in 1958 and remains one of Tokyo's most important religious sites.
+
+            Surrounded by a 175-acre evergreen forest that is home to some 120,000 trees representing species found across Japan — as well as the interesting "wishing tree," on which visitors can write and hang their deepest wishes — the shrine's highlights include its Inner Precinct (Naien) with its museum containing royal treasures, and the Outer Precinct (Gaien).</p>
+        </div>
+        <div class="column1" onclick="toggleDescription('desc2')">
+          <img src="https://www.planetware.com/wpimages/2022/03/japan-tokyo-top-attractions-things-to-do-shinjuku-gyoen-national-garden.jpg" alt="Image 2">
+          <h2>Explore the Shinjuku Gyoen National Garden</h2>
+          <p id="desc2" class="description">Walk through one of Tokyo's most historic pieces of land when you visit the Shinjuku Gyoen National Garden. Formerly the residence of the Naito family during the Edo period (17th-19th centuries), it was transferred to the Imperial Family. It is now a national garden, which opened in 1949, and is considered to be one of the most beautiful in Japan.
+
+            The garden is considered one of the best because it fuses together three types of traditional garden: French Formal, English Landscape, and Japanese traditional. It also happens to be one of the best spots in Tokyo to view the cherry blossoms, as the garden has roughly 1,500 cherry trees. You'll also find Himalayan cedars, cypresses, and tulip trees. The garden is very popular in the autumn, when the leaves start to change to crimson and gold.</p>
+        </div>
+        <div class="column1" onclick="toggleDescription('desc3')">
+          <img src="https://www.planetware.com/photos-large/JPN/japan-tokyo-ueno-park-zoo.jpg" alt="Image 3">
+          <h2>Enjoy Nature at Ueno Park and Ueno Zoo</h2>
+          <p id="desc3" class="description">A paradise-like oasis of green in the heart of busy Tokyo, Ueno Park (Ueno Kōen) is the city's largest green space and one of its most popular tourist attractions. In addition to its lovely grounds, the park also boasts numerous temples and museums to explore.
+
+            Criss-crossed by pleasant gravel paths, this 212-acre park includes highlights such as a trip on a small boat on the reed-fringed Shinobazu pond, around a little island with its Bentendo Temple. Be sure to also visit the 17th-century Toshogu Shrine (Nikkō Tōshō-gū), with its 256 bronze and stone lanterns.
+            
+            Another highlight here is Ueno Zoo (Onshi Ueno Dōbutsuen). Opened in 1882, it is Japan's oldest zoo, and is famous for the pandas presented by the People's Republic of China.
+            
+            While it's a large attraction and houses more than 3,00 animals representing some 400 species, having a fun monorail connecting its various components can help speed up a visit (and make it even more enjoyable).</p>
+        </div>
+      </div>
+      <div class="container1">
+      
+        <div class="column1" onclick="toggleDescription('desc4')">
+          <img src="https://www.planetware.com/photos-large/JPN/japan-tokyo-asakusa-senso-ji-temple.jpg" alt="Image 4">
+          <h2>Visit the Sensō-ji Temple</h2>
+          <p id="desc4" class="description">In the Asakusa district of Tokyo, the exquisite Sensō-ji Temple (Kinryū-zan Sensō-ji)) – the city's most famous shrine – stands at the end of a long street market hosting vendors selling masks, carvings, combs made of ebony and wood, toys, kimonos, fabrics, and precious paper goods.
+
+            Dedicated to Kannon, the Buddhist goddess of compassion, the temple was established in AD 645 and retains its original appearance despite having been rebuilt numerous times.
+            
+            Highlights of a visit include seeing the Kaminari-mon Gate with its 3.3-meter-high red paper lantern bearing the inscription "Thunder Gate," as well as the famous and much-loved Incense Vat, reputed to drive away ailments (you'll see people cupping their hands around the smoke and applying it to the part of their body needing healing).</p>
+        </div>
+        <div class="column1" onclick="toggleDescription('desc5')">
+          <img src="https://www.planetware.com/photos-large/JPN/japan-tokyo-ginza.jpg" alt="Image 5">
+          <h2>Shop 'Til you Drop in the Ginza District</h2>
+          <p id="desc5" class="description">Ginza is Tokyo's busiest shopping area and it's as iconic as Times Square in New York, and much older. It has in fact been the commercial center of the country for centuries and is where five ancient roads connecting Japan's major cities all met. Lined by exclusive shops and imposing palatial stores, the Ginza district is also fun to simply wander around or. Better still, sit in one of its many tea and coffee shops or restaurants while watching the world rush past.
+
+            At weekends, when everything is open, it's a shopper's paradise as traffic is barred, making it one of the world's largest pedestrian zones. Come nightfall, gigantic advertising panels on its many buildings bathe Ginza in bright neon light.</p>
+        </div>
+        <div class="column1" onclick="toggleDescription('desc6')">
+          <img src="https://www.planetware.com/photos-large/JPN/japan-tokyo-skytree.jpg" alt="Image 6">
+          <h2>See the View from the Tokyo Skytree</h2>
+          <p id="desc6" class="description">It's hard to miss the Tokyo Skytree (Tōkyō Sukaitsurī). This 634-meter-tall communications and observation tower rises out of the city's Sumida district of Minato like a huge rocket ship.
+
+            The country's tallest structure (and the world's tallest freestanding tower), the Tokyo Skytree opened in 2012 and has quickly become one of the city's most visited tourist attractions thanks to the incredible panoramic views from its restaurant and observation decks.
+            
+            With a base designed in the form of a massive tripod, the tower includes a number of cylindrical observation levels, including one at the 350-meter mark, and another at the 450-meter point - the latter includes a unique glass spiral walkway to an even higher viewpoint with glass floors for those with strong stomachs.</p>
+        </div>
+      </div>
+    
+      <!-- Row 3 -->
+       <div class="container1">
+      
+        <div class="column1" onclick="toggleDescription('desc7')">
+          <img src="https://www.planetware.com/photos-large/JPN/japan-tokyo-national-museum.jpg" alt="Image 7">
+          <h2>Wander through the Tokyo National Museum</h2>
+          <p id="desc7" class="description">Tokyo National Museum (ōkyō Kokuritsu Hakubutsukan) houses more than 100,000 important works of Japanese, Chinese, and Indian art, including more than 100 national treasures.
+
+            Opened in 1938, the TNM, as it's usually known, includes highlights such as numerous Buddhist sculptures from Japan and China dating from the 6th century to the present, as well as fine collections of old textiles, historical weapons, and military equipment.
+            
+            Also noteworthy are its large collections of historical Japanese clothing and Asian ceramics and pottery. Important artwork includes Japanese paintings from the 7th to the 14th centuries, and another must-see is the museum's exquisite collections of Japanese and Chinese masterpieces of lacquer work of various centuries, including examples of lacquer-carving, gold lacquer, and lacquer with mother of pearl. There are also many fine examples of calligraphy.</p>
+        </div>
+        <div class="column1" onclick="toggleDescription('desc8')">
+          <img src="https://www.planetware.com/photos-large/JPN/japan-tokyo-imperial-palace.jpg" alt="Image 8">
+          <h2>Tour the Imperial Palace</h2>
+          <p id="desc8" class="description">The chief attraction of Tokyo's Marunouchi district is the Imperial Palace (Kōkyo) with its beautiful 17th-century parks surrounded by walls and moats. Still in use by the Imperial family, the Imperial Palace stands on the site where, in 1457, the Feudal Lord Ota Dokan built the first fortress, the focal point from which the city of Tokyo (or Edo, as it was then) gradually spread.
+
+            As famous as the palace is the Nijubashi Bridge leading to its interior, a structure that takes its name ("double bridge") from its reflection in the water. Other notable features include the two-meter-thick wall surrounding the palace and its gates, one of which leads to the East Higashi-Gyoen Garden.
+            
+            Tours of the Imperial Palace are available (pre-registration required) and include the Kikyo-mon Gate, Someikan (Visitors' House), Fujimi-yagura ("Mt. Fuji View" Keep), the East Gardens and Inner Gate, the Seimon-tetsubashi bridge, and the Imperial Household Agency Building (be sure to plan ahead).</p>
+        </div>
+        <div class="column1" onclick="toggleDescription('desc9')">
+          <img src="https://www.planetware.com/wpimages/2022/03/japan-tokyo-top-attractions-things-to-do-visit-miraikan-edo-tokyo-museums.jpg" alt="Image 9">
+          <h2>Visit the Miraikan and Edo-Tokyo Museums</h2>
+          <p id="desc9" class="description">One of Tokyo's newest museums, the impressive National Museum of Emerging Science and Innovation (Nippon Kagaku Mirai-kan) – usually simply referred to as the Miraikan – offers a fascinating insight into Japan's leading role in the field of technology.
+
+            Created by Japan's Science and Technology Agency, this ultra-modern, purpose-built facility includes many hands-on interactive exhibits dealing with everything from earthquakes to weather, as well as renewable energy and robotics. Highlights include a number of displays relating to modern transportation such as a superb model of a Maglev train, as well as a robotics exhibition.
+            
+            Also worth visiting is the Edo-Tokyo Museum. Completed in 1993, the museum's exhibits deal with the region's rich past, present, and future. Of particular interest is a replica bridge leading into a mock-up of dwellings in the original old city of Edo.</p>
+        </div>
+     
+    </div>
+</div>
+    <script>
+        function toggleDescription(id) {
+    var desc = document.getElementById(id);
+    if (desc.style.display === 'none') {
+      desc.style.display = 'block';
+    } else {
+      desc.style.display = 'none';
+    }
+  }
+
+  
+    </script>
+  </body>
+</html>
