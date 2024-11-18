@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OSAKA CASTLE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+       body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: url('https://www.tripsavvy.com/thmb/42sZb5gdCEN2fxPCPfpwZVQEhWM=/2120x1415/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-824113084-5c618dd5c9e77c0001d92d3a.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  color: white; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+main {
+  padding: 20px;
+}
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.column {
+  flex-basis: 50%; 
+  padding: 20px; 
+  background-color: white; 
+  overflow: hidden; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.column img {
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.column h2 {
+  font-size: 3em; 
+  margin-bottom: 10px; 
+}
+
+.column p {
+  font-size: 1em; 
+  line-height: 1.5; 
+}
+.spacer{
+    height: 10vh;
+}
+.centered-topic {
+  background-color: grey; 
+  padding: 20px 40px; 
+  border-radius: 8px; 
+  text-align: center;
+}
+
+.centered-topic h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.column1 {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.column1 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.column1 h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.description {
+  display: none; /* Initially hide descriptions */
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+  </style>
+  <body>
+    <header class="header">
+        <h1>OSAKA CASTLE</h1>
+      </header>
+      <div class="spacer"></div>
+      <div class="container">
+        <div class="column">
+          <img src="https://th.bing.com/th/id/R.f10a33c4e79d060f339601f87ed07831?rik=vWQSQ6e%2bG%2b%2byvA&riu=http%3a%2f%2finspirationseek.com%2fwp-content%2fuploads%2f2014%2f09%2fOsaka-Castle-Pictures-Wallpaper1.jpg&ehk=8T3lbjjzoR7zo65b6RV4KjpVXZ8L6f%2bBVnkTp0tlSvs%3d&risl=&pid=ImgRaw&r=0" alt="Image">
+        </div>
+        <div class="column">
+          <h2>About</h2>
+          <p>Osaka Castle, one of Japan's most famous landmarks, stands proudly in the heart of Osaka. Originally built in the late 16th century by Toyotomi Hideyoshi, a powerful daimyo, the castle played a crucial role in the unification of Japan during the Azuchi-Momoyama period. The castle's imposing main tower, reconstructed in the 1930s, offers panoramic views of Osaka and houses a museum detailing the castle's history and Hideyoshi's life. Surrounded by a vast park, beautiful gardens, and moats, Osaka Castle serves as a popular tourist destination, showcasing both historical significance and natural beauty.</p>
+        </div> 
+       
+      </div>
+      <div class="centered-topic">
+        <h1>HIGHLIGHTS</h1>
+      </div>
+
+      <div class="container1">
+        <!-- Row 1 -->
+        
+          <div class="column1" onclick="toggleDescription('desc1')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-osaka-shitenno-ji-temple.jpg" alt="Image 1">
+            <h2>Shitennō-ji Temple</h2>
+            <p id="desc1" class="description">Shitennō-ji is Osaka's best-known temple and can trace its roots back to 59 CE. It was also Japan's first Buddhist temple. Although rebuilt numerous times through the centuries (the most recent reconstruction took place in the 1960s), this lovely temple remains the oldest such religious site to be officially administered.
+
+              Highlights of a tour include the site's five-story pagoda, along with a number of other exquisitely decorated buildings. The best of these are the Golden Pavilion (Kondō) with its fine statues and paintings, the Lecture Hall (Kōdō), and a lovely covered corridor linking three of the site's gates. </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc2')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-osaka-aquarium-kaiyukan.jpg" alt="Image 2">
+            <h2>Osaka Aquarium Kaiyukan</h2>
+            <p id="desc2" class="description">Looking a little as if it might be made of giant Lego blocks, the Osaka Aquarium Kaiyukan is well worth exploring. One of the world's biggest such attractions, this walk-through aquarium takes guests on a fascinating tour of a number of marine habitats. These include the Pacific Ocean and Antarctica, along with the Great Barrier Reef and Monterey Bay.
+
+              A variety of Japanese marine life is also featured, including freshwater species, as well as native reptiles and mammals. All told, the site boasts 27 tanks, the biggest being nine meters deep and capable of easily accommodating large marine life including manta rays and sharks.
+            </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc3')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-osaka-umeda-sky-building.jpg" alt="Image 3">
+            <h2> The Umeda Sky Building
+            </h2>
+            <p id="desc3" class="description">In addition to the stunning architectural designs associated with its museums and art galleries, Osaka boasts many other fine examples of modern architecture. Perhaps the best known is the aptly named Umeda Sky Building (Umeda Sukai Biru), a stunning landmark consisting of two office towers joined at the top by a large platform-like structure.
+
+              It's this rooftop structure that draws visitors, due largely to the network of bridges and an escalator, which join the two towers, providing plunging views of 170-plus meters that send shivers down the spines of those sensitive to heights. The views from the rooftop observatory and garden - aptly named the Floating Garden Observatory - are simply stunning.</p>
+          </div>
+        </div>
+      
+        <div class="container1">
+        
+          <div class="column1" onclick="toggleDescription('desc4')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-osaka-tempozan-ferris-wheel.jpg" alt="Image 4">
+            <h2>The Tempozan Ferris Wheel and Harbor Village</h2>
+            <p id="desc4" class="description">The Tempozan Ferris Wheel provides some of the best views over Osaka, particularly of the port area and the Tempozan Harbor Village where it's located. This massive Ferris wheel is one of the largest such attractions in Asia, standing more than 112 meters tall and with a diameter spanning 100 meters.
+
+              In operation since 1997, this popular attraction offers a thrilling 17-minute journey that is especially enjoyable at night when the wheel is lit up in a variety of different colors dictated by the weather (orange when sunny weather is forecast, green for clouds, and blue for rain). Thrill seekers can opt for one of the special "see-through-bottom" cars for an incredible all-round view of Osaka Bay.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc5')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-osaka-tsutenkaku-kobe-port-tower.jpg" alt="Image 5">
+            <h2>The Kobe Port Tower</h2>
+            <p id="desc5" class="description">Osaka boasts not just one but two tall towers that have become synonymous with the city. The newest of these, Kobe Port Tower, is located on the outskirts of the city near the main harbor. Despite being a little farther away from the city center, it's certainly a must-visit attraction that draws crowds of tourists.
+
+              Opened in 1963 and constructed from red steel, this earthquake-proof structure stands 108 meters tall and has retained a look of modernity. The highlight of a visit is spending time on the observation deck, affording great views over the city and the Kobe Port area.
+              
+              Better still, if you're feeling hungry, consider booking a meal at the rotating restaurant, which enjoys the same spectacular views (it's an especially fun experience at night).</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc6')">
+            <img src="https://www.planetware.com/wpimages/2020/09/japan-osaka-top-attractions-tsutenkaku-tower.jpg" alt="Image 6">
+            <h2>Tsūtenkaku Tower</h2>
+            <p id="desc6" class="description">The oldest of Osaka's two towers, Tsūtenkaku, is located in the city center and is one of the city's best-known landmarks. It was in fact built on the site of a replica of the Eiffel Tower that was constructed in 1912 and destroyed in WWII.
+
+              The current structure, completed in 1956, still offers some of the best views over Osaka. The best of these views can be enjoyed from the observation level on its fifth floor, where you'll also find a shrine of the God of Happiness. If visiting at nightfall, the tower is lit up with a dizzying display of neon lights.</p>
+          </div>
+        </div>
+      
+       <div class="container1">
+    
+          <div class="column1" onclick="toggleDescription('desc7')">
+            <img src="https://www.planetware.com/wpimages/2023/05/japan-osaka-top-attractions-national-museum-of-art-blue-sky.jpg" alt="Image 7">
+            <h2>The National Museum of Art</h2>
+            <p id="desc7" class="description">The National Museum of Art, Osaka (NMAO), is a unique underground art museum located just a few minutes from the city center on Nakanoshima, a small island between the Tosabori and Dōjima rivers. Opened in 1977, this important gallery contains a large collection from some of the leading international artists of the post-war period, including examples by Picasso and Cézanne and Japanese artists Kuniyoshi and Foujita.
+
+              It's also home to many important relics and statues. Even if art isn't your thing, it's worth visiting for the spectacular steel structure outside the museum, a massive installation designed to look like reeds bending under a breeze.
+              
+              Also worth a visit is the Osaka Municipal Museum of Fine Art. This fine gallery is home to a collection of ancient Chinese calligraphy and artwork by Japan's most revered artists.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc8')">
+            <img src="https://www.planetware.com/photos-large/JPN/japan-osaka-tennoji-park-zoo.jpg" alt="Image 8">
+            <h2>Osaka Tennōji Zoo & Park</h2>
+            <p id="desc8" class="description">Osaka's largest green space, Tennōji Park (Tennōji Kōen), serves as a place of respite from this otherwise busy city. Noted for its many fragrant flower beds and, in spring, its cherry blossoms, the park is a delight to explore thanks also to its many fun sculptures, ponds, and bridges.
+
+              It's also home to some of the city's most important tourist attractions, including the Osaka Tennōji Zoo. Opened in 1915, the zoo features a variety of species, including lions, giraffes, and elephants, all housed in such a way that they seem to be roaming the African savannah.
+              
+              Also worth a visit is the hippo pool and reptile house. Hot Tip: Try to time your visit for the free tours of the park's greenhouses and other areas not usually open to the public.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc9')">
+            <img src="https://www.planetware.com/wpimages/2023/05/japan-osaka-top-attractions-osaka-science-museum-exterior.jpg" alt="Image 9">
+            <h2>Osaka Science Museum</h2>
+            <p id="desc9" class="description">Looking not unlike the bridge of a large ship - a fact that could be credited to its waterside setting - the Osaka Science Museum (Ōsaka Shiritsu Kagakukan) is a delightful outing for those traveling with kids.
+
+              Opened in 1989 above the National Museum of Art, the museum contains numerous hands-on and interactive exhibits based on a number of science-related themes covering everything from astronomy to energy sources. It also boasts the country's first planetarium.
+              
+              Also worth a visit is the Osaka International Peace Center (Ōsaka-kokusai-heiwa-sentaa), a museum dedicated, as the name suggests, to matters of peace. Highlights include sobering displays relating to the destruction of war, as well as a replica of the famous Doomsday Clock.</p>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        function toggleDescription(id) {
+    var desc = document.getElementById(id);
+    if (desc.style.display === 'none') {
+      desc.style.display = 'block';
+    } else {
+      desc.style.display = 'none';
+    }
+  }
+    </script>
+  </body>
+</html>

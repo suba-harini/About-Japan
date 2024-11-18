@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kyoto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+       body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: url('https://wallpaperaccess.com/full/2726309.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  color: white; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+main {
+  padding: 20px;
+}
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.column {
+  flex-basis: 50%; 
+  padding: 20px; 
+  background-color: white; 
+  overflow: hidden; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.column img {
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.column h2 {
+  font-size: 3em; 
+  margin-bottom: 10px; 
+}
+
+.column p {
+  font-size: 1em; 
+  line-height: 1.5; 
+}
+.spacer{
+    height: 10vh;
+}
+.centered-topic {
+  background-color: grey; 
+  padding: 20px 40px; 
+  border-radius: 8px; 
+  text-align: center;
+}
+
+.centered-topic h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.column1 {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.column1 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.column1 h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.description {
+  display: none; /* Initially hide descriptions */
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+  </style>
+  <body>
+    <header class="header">
+        <h1>KYOTO</h1>
+      </header>
+      <div class="spacer"></div>
+      <div class="container">
+        <div class="column">
+            <img src="https://content.r9cdn.net/rimg/dimg/83/d4/85f68013-city-20339-16489ec9b8b.jpg?crop\u003dtrue\u0026width\u003d1000\u0026height\u003d600\u0026xhint\u003d1444\u0026yhint\u003d1011" alt="Image">
+          </div>
+        <div class="column">
+          <h2>About</h2>
+          <p>Kyoto, once the imperial capital of Japan, is a city renowned for its rich cultural heritage and stunning historical sites. Nestled in the Kansai region, it is celebrated for its well-preserved temples, shrines, and traditional wooden houses, which offer a glimpse into Japan's ancient past. Kyoto is home to iconic landmarks such as Kinkaku-ji (the Golden Pavilion), Fushimi Inari Taisha with its thousands of red torii gates, and the serene Arashiyama Bamboo Grove. The city's picturesque gardens, such as those at Ryoan-ji and Nanzen-ji, exemplify the Japanese art of garden design. Kyoto is also famous for its traditional tea houses, where visitors can experience the art of Japanese tea ceremonies, and for its geisha culture, particularly in the Gion district. Throughout the year, Kyoto hosts numerous festivals, including the famous Gion Matsuri, which celebrates the city's historical and cultural heritage.  </p>
+        </div> 
+      </div>
+      <div class="centered-topic">
+        <h1>HIGHLIGHTS</h1>
+      </div>
+
+      <div class="container1">
+        <!-- Row 1 -->
+        
+          <div class="column1" onclick="toggleDescription('desc1')">
+            <img src="https://lp-cms-production.imgix.net/image_browser/Kinkaku-ji-golden-pavilion-kyoto.jpg?w=1920&auto=format&q=75" alt="Image 1">
+            <h2>Stay golden at Kinkaku-ji</h2>
+            <p id="desc1" class="description">Kinkaku-ji is a tourist favorite – nicknamed Golden Pavilion for its gold-leaf gilded upper layers, this zen temple is a magnificent sight regardless of the time of year. One-way foot traffic flows fairly consistently but tends to bunch up directly in front of the temple, where visitors tend to pause to grab a show-stopping photo of the temple reflected in the pond (again, who can blame them?).
+
+                Consider visiting on a weekday to avoid the rush.
+                
+                </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc2')">
+            <img src="https://lp-cms-production.imgix.net/image_browser/Fushimi-Inari-Taisha.jpg?w=1920&auto=format&q=75" alt="Image 2">
+            <h2> Walk through the iconic orange gates of Fushimi Inari Taisha</h2>
+            <p id="desc2" class="description">There’s a reason that Fushimi Inari-Taisha ranks high on every visitor’s list: the 10,000 vibrant orange torii (gates) snaking up the hill to create the ultimate photo op. The practice of donating a gate to the temple has been in place since the Edo Period and carries on today as businesses celebrate their successes with an act of gratitude. 
+
+                Start at the lower level to admire the skulk of fox statues – the manifestation of the Shintō god Inari, the protector of rice, tea, agriculture and industry.  The full loop takes two to three hours to complete, but it’s worth making the climb to avoid the throng of visitors that usually populate the lower levels (don’t worry, there are plenty of vending machines to keep you hydrated along the way). </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc3')">
+            <img src="https://lp-cms-production.imgix.net/image_browser/Nij%C5%8D-castle.jpg?w=1920&auto=format&q=75" alt="Image 3">
+            <h2>Find fortune at Kiyomizu-dera</h2>
+            <p id="desc3" class="description">Located in Eastern Kyoto, Kiyomizu-dera literally towers over the city with the help of 139 stilts. During the Edo period, seekers would jump from the temple's platform to the ground 43ft below in order to make their wishes come true. Today, you can instead find your fortune at the sacred Otowa Waterfall. Located on the temple’s lower level, the stream is divided into three sections, delivering longevity, academic success or luck in love depending on which one you drink from (take note that drinking from more than one stream is considered greedy). But you don’t need any luck to enjoy the temple’s panoramic views over the city, which are enhanced by spring sakura (cherry blossom) season, autumn foliage and stunning sunsets.
+
+            </p>
+          </div>
+        </div>
+      
+        <div class="container1">
+        
+          <div class="column1" onclick="toggleDescription('desc4')">
+            <img src="https://lp-cms-production.imgix.net/image_browser/green-tea-kyoto.jpg?w=1920&auto=format&q=75" alt="Image 4">
+            <h2>Sip on some matcha</h2>
+            <p id="desc4" class="description">Matcha was originally drunk by Chinese Buddhist monks who believed the highly caffeinated beverage assisted in their quest for nirvana. When the religion spread to Japan, matcha came with it, particularly in the southern region of Kyoto Prefecture, which has an 800-year tradition of cultivation. To learn more about the beverage, start with a traditional tea ceremony at Camellia for an experience that will not only walk you through the elaborate steps of preparation but also explain the historical and practical reason behind each movement. 
+
+                For a more modern take, stop by Maccha House. Their flagship store on Shijō Kawaramachi serves a number of unique twists on the beverage, including a brown sugar matcha latte and their signature Uji Matcha Tiramisu. Tea shops like Ippōdō and Marukyu Koyamaen (located in Kyoto Isetan department store adjacent to Kyoto Station) can help you bring the zen home with you. </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc5')">
+            <img src="https://lp-cms-production.imgix.net/2021-07/BTnishiki-market-kyoto-japan-07201412-052627.jpg?w=1920&auto=format&q=75" alt="Image 5">
+            <h2>Get your ramen fix</h2>
+            <p id="desc5" class="description">Kyoto’s food scene is often overlooked thanks to neighboring Osaka, aka “the nation’s kitchen.” However, the city has been teasing out different types of the famous noodle soup since the first ramen street stall was set up in 1961. 
+
+                Kyoto Gogyo is known for its high-end burnt ramen, with broth cooked at extremely high temperatures to create a smoky char and entertaining fiery show while you eat – so be sure to request a seat at the bar. Vegan Ramen UZU Kyoto’s mushroom-based ramen is served in a darkened dining room, lit by TeamLab’s “Reversed Indiscretion,” a mesmerizing piece of digital art that creates calligraphy-like swoops across the walls and table. Engine Ramen has become a favorite due to its ability to make any item on the menu vegan or gluten-free. Just be sure to line up early as the restaurant regularly fills up after it opens for dinner at 4pm.   </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc6')">
+            <img src="https://lp-cms-production.imgix.net/2021-07/LPI-25666-29.jpg?w=1920&auto=format&q=75" alt="Image 6">
+            <h2>Bring home sustainable souvenirs</h2>
+            <p id="desc6" class="description">From bento boxes to washi (handmade paper) and porcelain, Kyoto is a great place to pick up souvenirs. You could easily spend the day browsing tourist-favorite department stores Takashimaya and Daimaru Kyoto. To bring home a piece of history, consider a stop at Vintage Kimono AN Gion, a cozy storefront crammed with vintage kimonos. Not only do they sell the historical robes at extremely reasonable prices (often as low as ¥1000), but they also offer obi belts and damaged kimonos for those looking to repurpose the silk.</p>
+          </div>
+        </div>
+      
+       <div class="container1">
+    
+          <div class="column1" onclick="toggleDescription('desc7')">
+            <img src="https://lp-cms-production.imgix.net/image_browser/Arashiyama-bamboo-grove.jpg?w=1920&auto=format&q=75" alt="Image 7">
+            <h2>Relax in an onsen</h2>
+            <p id="desc7" class="description">More than just a bath (although it certainly is that), onsen are a great way to connect with nature and friends while participating in an act of self-care, provided you’re comfortable with group nudity. Carefully wash yourself from head to toe before slipping into hot water with a mineral content that locals claim can cure a WebMD worth of ailments.
+
+                If you want to soak within the city limits, head to Fu-fu-no-yu, a facility with stunning rock-lined pools inches from the Katsura River.
+                
+                </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc8')">
+            <img src="https://lp-cms-production.imgix.net/2021-07/GettyRF_500745590.jpg?w=1920&auto=format&q=75" alt="Image 8">
+            <h2>Wander through Arashiyama</h2>
+            <p id="desc8" class="description">The sound of bamboo in the wind is part of Japan's national heritage. Located in the Western Kyoto district of Arashiyama, the Arashiyama Bamboo Grove is one of the most famous places in the world to hear it. Just keep in mind that, while scenic, the 140m (459ft) walk isn’t as quiet as you might have been led to believe thanks to its popularity. If you’re in the market for the ultimate selfie, or just a more restful experience, visit at sunrise. 
+
+                Not an early riser? Opt to visit Shoden-ji, a temple in Northern Kyoto with an abundant bamboo groove that’s often overlooked by tourists.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc9')">
+            <img src="https://lp-cms-production.imgix.net/image_browser/gion-kyoto.jpg?w=1920&auto=format&q=75" alt="Image 9">
+            <h2>Embrace the seasons at Osawa Pond</h2>
+            <p id="desc9" class="description">Osawa Pond is a 15-minute walk from JR Saga-Arashiyama Station, but the garden feels plucked from an entirely different era. The human-made pond is the oldest known surviving Japanese garden and a peaceful refuge to enjoy fall colors and spring sakura season. Be sure to visit Daikaku-ji next door, a sprawling Shingon Buddhist temple with architecture so untouched by time it’s often used as a filming location for historical dramas.</p>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        function toggleDescription(id) {
+    var desc = document.getElementById(id);
+    if (desc.style.display === 'none') {
+      desc.style.display = 'block';
+    } else {
+      desc.style.display = 'none';
+    }
+  }
+    </script>
+  </body>
+</html>

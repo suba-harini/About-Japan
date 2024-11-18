@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISHIGAKI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+       body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: url('https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f213a9da94.98961814.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  color: white; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+main {
+  padding: 20px;
+}
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.column {
+  flex-basis: 50%; 
+  padding: 20px; 
+  background-color: white; 
+  overflow: hidden; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.column img {
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.column h2 {
+  font-size: 3em; 
+  margin-bottom: 10px; 
+}
+
+.column p {
+  font-size: 1em; 
+  line-height: 1.5; 
+}
+.spacer{
+    height: 10vh;
+}
+.centered-topic {
+  background-color: grey; 
+  padding: 20px 40px; 
+  border-radius: 8px; 
+  text-align: center;
+}
+
+.centered-topic h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.column1 {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.column1 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.column1 h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.description {
+  display: none; /* Initially hide descriptions */
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+  </style>
+  <body>
+    <header class="header">
+        <h1>ISHIGAKI</h1>
+      </header>
+      <div class="spacer"></div>
+      <div class="container">
+        <div class="column">
+          <h2>About</h2>
+          <p>Ishigaki, the largest island in Japan's Yaeyama archipelago, is renowned for its stunning natural beauty and vibrant culture. Located in Okinawa Prefecture, Ishigaki boasts pristine beaches, crystal-clear waters, and lush, mountainous landscapes, making it a paradise for outdoor enthusiasts and beach lovers. The island is famous for activities like snorkeling, diving, and exploring the coral reefs, particularly in Kabira Bay. Beyond its natural attractions, Ishigaki offers rich cultural experiences, with traditional Ryukyu festivals, music, and cuisine that reflect its unique heritage. The island's friendly locals, relaxed atmosphere, and breathtaking scenery make Ishigaki a captivating destination for travelers seeking both adventure and tranquility.</p>
+        </div> 
+        <div class="column">
+            <img src="https://098free.com/wp-content/uploads/2019/12/038T0A7480_i.jpg" alt="Image">
+          </div>
+      </div>
+      <div class="centered-topic">
+        <h1>HIGHLIGHTS</h1>
+      </div>
+
+      <div class="container1">
+        <!-- Row 1 -->
+        
+          <div class="column1" onclick="toggleDescription('desc1')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f21547a270.88207110.jpeg" alt="Image 1">
+            <h2>Kabira Bay</h2>
+            <p id="desc1" class="description">The view of Kabira Bay (川平湾) is a symbol of Ishigaki Island and it is the most-visited tourist site there. You can see the emerald green sea and tiny islands floating on the bay. There are lots of nice photo spots around Kabira Bay, so take a stroll to find your favorite place. An observation deck in Kabira Park is one of the best places to view Kabira Bay. Kayaking and snorkeling are popular activities there.
+
+            </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc2')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f217586a00.65767656.jpeg" alt="Image 2">
+            <h2>Beach Hopping</h2>
+            <p id="desc2" class="description">There are tens of popular and hidden beaches all around the island, and here is the introduction to a few selected beaches. Maesato Beach (マエサトビーチ), located in the central south of the island, is one of the most popular beaches among visitors. It is the adjoining beach of InterContinenral ANA Ishigaki Resort and offers rental items such as beach chairs and umbrellas. Ishigaki-jima Sunset Beach (石垣島サンセットビーチ) is also a famous beach to enjoy beautiful scenery and activities observed by lifeguards. Yonehara Beach (米原ビーチ) is also a nice beach with less tourists.
+            </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc3')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f219014fb6.12539411.jpeg" alt="Image 3">
+            <h2>Water Activities</h2>
+            <p id="desc3" class="description">Ishigaki Island offers you lots of chances to enjoy various activities with rich nature all over the island. There are not only water activities in the transparent sea such as snorkeling, diving, SUP, kayak and so on but also star gazing, jungle trekking and hand-crafting. These activities definitely make your trip upgraded.</p>
+          </div>
+        </div>
+      
+        <div class="container1">
+        
+          <div class="column1" onclick="toggleDescription('desc4')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f21c5c8331.65908079.jpeg" alt="Image 4">
+            <h2>Hirakubosaki Lighthouse</h2>
+            <p id="desc4" class="description">Hirakubosaki Lighthouse (平久保崎灯台), the northernmost point of Ishigaki Island, overlooks the breathtaking sea and the blight greenery on the island. Get up hill and view the blue gradation colored by coral reef. Hirakubosaki Lighthouse is a little far from the downtown, so especially recommended to visit for those who hire a car.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc5')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f21e0a9616.93785278.jpeg" alt="Image 5">
+            <h2>Tamatorizaki Observatory</h2>
+            <p id="desc5" class="description">Tamatorizaki Observatory (玉取崎展望台), located in the northeast of the island, is one of the most scenic spots in Ishigaki Island. From top of the hill, you can see the shiny ocean reflecting sunshine and the east side of the island. On the way to the top, there are flowers flourishing all year around including some kinds of hibiscus.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc6')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f2210f8ee6.09295051.png" alt="Image 6">
+            <h2>Ishigaki Island Limestone Cave</h2>
+            <p id="desc6" class="description">Ishigaki Island Limestone Cave (石垣島鍾乳洞) is a mysterious nature spot where you can enjoy regardless of weather. It is allowed to explore the 660m long cave of 3,200m long, which has been being naturally formed for about 200 thousand years. The place used to be bottom of the sea in ancient times since fossils of giant clams has been discovered. There are also beautiful illuminations lighting the whole limestone cave.</p>
+          </div>
+        </div>
+      
+       <div class="container1">
+    
+          <div class="column1" onclick="toggleDescription('desc7')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f228815d41.60547781.png" alt="Image 7">
+            <h2>Banna Park</h2>
+            <p id="desc7" class="description">Banna Park (バンナ公園), located in the southwest of Ishigaki Island, is one of the most popular parks among local people especially family. There are forests where indigenous creatures and plants live, lots of observatories, open spaces children can play and more fun places in the enormous park. On top of he 230m high mountain Mount Banna, you can view the emerald-green ocean.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc8')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f230e954b6.74378088.png" alt="Image 8">
+            <h2> Ocean views at cafes
+            </h2>
+            <p id="desc8" class="description">Where to eat is a key point for enjoying your trip to Ishigaki Island. In addition to delicious Okinawan food, it is nice to having a seat with ocean views, isn’t it? It is highly recommended to have lunch in that situation, and Seven Colors Cafe is one of the best places. The cafe is also used for the restaurants for guests of Seven Colors, which is the gorgeous resort located far north.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc9')">
+            <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15f23dcba371.23481979.jpeg" alt="Image 9">
+            <h2>Ishigaki Beef</h2>
+            <p id="desc9" class="description">Ishigaki Island has a variety of regional Okinawan food, and what you should have the most in the island is Ishigaki Beef (石垣牛). It is one of the highest quality Wagyu Beef brands indigenous originated in Ishigaki Island, which is the only place you can taste it at that affordable rate. It is highly recommended to enjoy the meat in the Yakiniku (Japanese BBQ) style.</p>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        function toggleDescription(id) {
+    var desc = document.getElementById(id);
+    if (desc.style.display === 'none') {
+      desc.style.display = 'block';
+    } else {
+      desc.style.display = 'none';
+    }
+  }
+    </script>
+  </body>
+</html>

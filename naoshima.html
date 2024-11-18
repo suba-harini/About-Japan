@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NAOSHIMA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <style>
+       body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-image: url('https://cdn.audleytravel.com/1400/999/60/1023431-beach-on-naoshima-island.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 300px; 
+  color: white; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+main {
+  padding: 20px;
+}
+.container {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.column {
+  flex-basis: 50%; 
+  padding: 20px; 
+  background-color: white; 
+  overflow: hidden; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.column img {
+  max-width: 80%; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.column h2 {
+  font-size: 3em; 
+  margin-bottom: 10px; 
+}
+
+.column p {
+  font-size: 1em; 
+  line-height: 1.5; 
+}
+.spacer{
+    height: 10vh;
+}
+.centered-topic {
+  background-color: grey; 
+  padding: 20px 40px; 
+  border-radius: 8px; 
+  text-align: center;
+}
+
+.centered-topic h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+.container1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.column1 {
+  flex-basis: 30%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.column1 img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.column1 h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.description {
+  display: none; /* Initially hide descriptions */
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+  </style>
+  <body>
+    <header class="header">
+        <h1>KYOTO</h1>
+      </header>
+      <div class="spacer"></div>
+      <div class="container">
+        
+        <div class="column">
+          <h2>About</h2>
+          <p>Naoshima, a small island in the Seto Inland Sea of Japan, has gained international acclaim for its unique blend of contemporary art and natural beauty. Known as "Art Island," Naoshima is renowned for its innovative integration of modern art with the island’s serene landscapes. The island boasts several art museums, including the Benesse Art Site Naoshima, which houses works by renowned artists such as Yayoi Kusama, with her iconic polka-dot installations, and Tadao Ando’s architectural marvels. The Chichu Art Museum, designed by Ando, is particularly celebrated for its underground galleries that harmonize with the island’s natural environment. Public art installations and sculptures are scattered throughout the island, transforming Naoshima into an open-air gallery.   </p>
+        </div> 
+        <div class="column">
+            <img src="https://cdn.audleytravel.com/1060/757/60/1347036-naoshima-installation.jpg" alt="Image">
+          </div>
+      </div>
+      <div class="centered-topic">
+        <h1>HIGHLIGHTS</h1>
+      </div>
+
+      <div class="container1">
+        <!-- Row 1 -->
+        
+          <div class="column1" onclick="toggleDescription('desc1')">
+            <img src="https://perchancetoroam.com/wp-content/uploads/2022/08/DSC02433-2048x1535.jpg?ezimgfmt=ng:webp/ngcb1" alt="Image 1">
+            <h2>Honmura Art House Project</h2>
+            <p id="desc1" class="description">As compelling as the big art museums on the island are, the unique Art House Project was what impressed us the most on Naoshima. Ever since 1998, once-abandoned houses in the village of Honmura on the eastern coast of the island have been transformed into unique exhibition spaces.
+
+                The interesting part is that the artists tried to incorporate the history and culture of the respective locations into their artworks. Many of them are immersive experiences and all have their own unique twist. Visiting one house is 420¥, visiting all six will set you back 1,050¥.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc2')">
+            <img src="https://perchancetoroam.com/wp-content/uploads/2022/08/DSC02462-scaled.jpg?ezimgfmt=ng:webp/ngcb1" alt="Image 2">
+            <h2>Benesse House Museum</h2>
+            <p id="desc2" class="description">Like the other big museums on the island, this impressive exhibition site at the southern tip of the island has been designed by famous Japanese Architect Tadao Andō. On three floors, it features an impressive array of modern art by domestic and international artists, including David Hockney, Robert Rauschenberg and Hiroshi Sugimoto.
+                I particularly liked Yukinori Yanagi’s The World Flag Ant Farm featuring live ants burrowing themselves through the flags of the world made of sand. So much for the oft-invoked permanence of art. We were told that a print of Andy Warhol’s Flowers could be found in the museum as well, which we at first looked for unsuccessfully.
+            </p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc3')">
+            <img src="https://perchancetoroam.com/wp-content/uploads/2022/08/DSC02495-scaled.jpg?ezimgfmt=ng:webp/ngcb1" alt="Image 3">
+            <h2>Lee Ufan Museum</h2>
+            <p id="desc3" class="description">Contrary to the other nearby museums, this one focuses exclusively on the work of Lee Ufan, a Korean artist, who produced some beautiful minimalist paintings and sculptures. The museum is housed in a bunker-like underground structure, again designed by Tadao Andō.
+
+                We liked it but I guess it’s best to have a look online to check whether or not the style is for you. The entrance fee is 1,050¥. The garden right outside the door also features some sculptures and installations by Ufan, which can be visited for free.</p>
+          </div>
+        </div>
+      
+        <div class="container1">
+        
+          <div class="column1" onclick="toggleDescription('desc4')">
+            <img src="https://perchancetoroam.com/wp-content/uploads/2022/08/DSC02513-1-2048x1535.jpg?ezimgfmt=ng:webp/ngcb1" alt="Image 4">
+            <h2>Naoshima Bath House I ♥ Yu</h2>
+            <p id="desc4" class="description">If you’ve walked around artworks all day and just want to relax for a bit, this bath house in Miyanoura village might be for you. This is a Sento, meaning that unlike in an Onsen, the water is warmed artificially, which doesn’t take away from the pleasurable feeling of soaking your potentially aching muscles.
+
+                As this is still Naoshima, expect some zany artfulness during your bath – including a big elephant sculpture standing on the dividing wall between the male and female bathing areas. The quirky exterior looks like it includes every object that ever washed up on the island’s shores.
+                
+                The entrance fee is 500¥. Notice that like in most public baths in Japan, men and women bathe separately.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc5')">
+            <img src="https://perchancetoroam.com/wp-content/uploads/2022/08/DSC02444-scaled.jpg?ezimgfmt=ng:webp/ngcb1" alt="Image 5">
+            <h2>Yellow Pumpkin and nearby art objects</h2>
+            <p id="desc5" class="description">The Yellow Pumpkin Sculpture, designed by Yayoi Kusama is arguably the most famous piece of art on the island as is evidenced by the people standing in line to take their picture with it. We couldn’t refrain either:-).
+
+                It can be found at the beach bit east of the Benesse House Museum. The nearby gardens of the hotel directly to the west feature other interesting sculptures, including a camel-flower-pot-hybrid creature by Niki de Saint Phalle.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc6')">
+            <img src="https://perchancetoroam.com/wp-content/uploads/2022/08/DSC02506-2048x1536.jpg?ezimgfmt=ng:webp/ngcb1" alt="Image 6">
+            <h2>Red Pumpkin</h2>
+            <p id="desc6" class="description">Also designed by Yayoi Kusama (I guess she really likes pumpkins), the Red Pumpkin Sculpture, unlike it’s yellow counterpart, can even be entered. It can be found near the ferry port in Miyanoura Village. There’s some other artworks nearby, including a cage-like sculpture called Naoshima Pavilion.</p>
+          </div>
+        </div>
+      
+       <div class="container1">
+    
+          <div class="column1" onclick="toggleDescription('desc7')">
+            <img src="https://th.bing.com/th/id/OIP.qbfxCnSnlkmEt187h9nsVgHaE8?w=241&h=180&c=7&r=0&o=5&dpr=2.5&pid=1.7" alt="Image 7">
+            <h2>Benesse House Museum</h2>
+            <p id="desc7" class="description">The Benesse House standing on the end of the southern side of Naoshima is an unmissable location on the island, for several reasons:
+
+                Its abstract architecture, in a display of huge volumes and concrete walls.
+                The artworks it houses are very interesting and diverse (pictures are prohibited so you'll have to go see for yourself).
+                The free surroundings of the main building, including its park and close to the beach, are decorated with numerous sculptures, such as Niki de Saint Phalle’s colorful installations or Yayoi Kusama's famous yellow pumpkin (Kabocha), the unofficial symbol of Naoshima (it was restored on October 04, 2022).
+                The famous art museum surprisingly offers about forty hotel 🏨 rooms in addition to the artworks display.
+                The museum’s building is placed at the top of a cliff and we recommend stopping by Issen, a cafe-restaurant offering a diving view on the Seto Inland Sea. The souvenir shop has a good supply and amateurs of Tadao Ando’s architecture will likely quench their thirst for design.</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc8')">
+            <img src="https://www.kanpai-japan.com/sites/default/files/styles/gallery_square_sm/public/uploads/2018/07/naoshima-1.jpg" alt="Image 8">
+            <h2>Chichu Art Museum</h2>
+            <p id="desc8" class="description">This marvelous artistic location is almost completely buried into the ground, and while its admission fee can be expensive, it is certainly worth the visit. The museum’s architecture, also designed by Tadao Ando, and the Monet exhibition it is sheltering are equally interesting.
+
+                The natural light varies throughout the day and the facility, providing a timeless and contemplative atmosphere. Note that quietness is expected from visitors, so you may want to avoid going with very young children. Ticket online reservation is advised and available up to 2 months in advance (tickets on sale each month from the 10th).</p>
+          </div>
+          <div class="column1" onclick="toggleDescription('desc9')">
+            <img src="https://www.kanpai-japan.com/sites/default/files/styles/gallery_square_sm/public/uploads/2018/07/naoshima-6.jpg" alt="Image 9">
+            <h2>Lee Ufan Museum</h2>
+            <p id="desc9" class="description">This museum is mainly recommended for its outdoor installations, that are free and provide a beautiful view on the coastline. The permanent collection is more suited to architecture aficionados and may seem a bit too light for the others.</p>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        function toggleDescription(id) {
+    var desc = document.getElementById(id);
+    if (desc.style.display === 'none') {
+      desc.style.display = 'block';
+    } else {
+      desc.style.display = 'none';
+    }
+  }
+    </script>
+  </body>
+</html>
